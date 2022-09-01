@@ -1,3 +1,5 @@
+# db/migrate/20210716095220_create_artists.rb
+
 class CreateArtists < ActiveRecord::Migration[6.1]
   def change
     create_table :artists do |t|
@@ -6,5 +8,6 @@ class CreateArtists < ActiveRecord::Migration[6.1]
       t.integer :age
       t.string :hometown
       # the id column is gemerated automatically for every table! no need to specify it here.
+    end
   end
 end
